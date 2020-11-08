@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function Success() {
-    return (
-        <div>
-            
-        </div>
-    )
+export class Success extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
 
 export default Success
+

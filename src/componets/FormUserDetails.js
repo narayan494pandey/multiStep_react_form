@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function FormUserDetails() {
-    return (
-        <div>
-            
-        </div>
-    )
+export class FormUserDetails extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
 
 export default FormUserDetails
+

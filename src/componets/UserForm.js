@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function UserForm() {
-    return (
-        <div>
-            
-        </div>
-    )
+export class UserForm extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
 
 export default UserForm
+
