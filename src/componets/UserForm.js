@@ -60,7 +60,7 @@ export class UserForm extends Component {
                     return (
                         <Confirm />
                     )
-            case 3:
+            case 4:
                     return (
                          <Success />
                     )

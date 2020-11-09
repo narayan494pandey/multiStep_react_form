@@ -4,7 +4,7 @@ export class Confirm extends Component {
     render() {
         return (
             <div>
-                
+                Confirm
             </div>
         )
     }
