@@ -64,8 +64,7 @@ class FormPersonalDetails extends Component {
 }
 const styles = {
     button:{
-        margin:15,
-        display:'flex'
+        margin:15
     }
 }
 export default FormPersonalDetails

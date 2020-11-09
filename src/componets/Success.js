@@ -11,4 +11,3 @@ export class Success extends Component {
 }
 
 export default Success
-
