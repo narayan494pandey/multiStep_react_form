@@ -11,7 +11,6 @@ class Confirm extends Component {
     }
     back = e =>{
         e.preventDefault();
-        //Process Form //
         this.props.prevStep();
     }
     render() {
@@ -60,7 +59,7 @@ class Confirm extends Component {
                     
                     <RaisedButton 
                         label="Back"
-                        primary={false}
+                        secondary={true}
                         style={styles.button}
                         onClick={this.back}
                     

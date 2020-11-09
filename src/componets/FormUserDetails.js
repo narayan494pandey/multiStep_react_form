@@ -33,7 +33,7 @@ class FormUserDetails extends Component {
                        floatingLabelText="Email"
                        onChange = {handleChange('email')}
                        defaultValue={values.email}
-                  />
+                    />
                     <br />
                     <RaisedButton 
                         label="Continue"
