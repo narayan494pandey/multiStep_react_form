@@ -20,16 +20,16 @@ export class UserForm extends Component {
     nextStep = () => {
         const {step} = this.state;
         this.setState({
-            step:step+1
+            step: step+1
         })
     }
 
     //go back to prev state
 
-    nextStep = () => {
+    prevStep = () => {
         const {step} = this.state;
         this.setState({
-            step:step-1
+            step: step - 1
         })
     }
     //Handle fields change 
@@ -51,19 +51,24 @@ export class UserForm extends Component {
                     handleChange={this.handleChange}
                     values={values}                    
                     />
-                )
+                );
             case 2:
                 return (
-                    <FormPersonalDetails />
-                )
+                    <FormPersonalDetails
+                        nextStep = {this.nextStep}
+                        prevStep={this.prevStep}
+                        handleChange={this.handleChange}
+                        values={values} 
+                    />
+                );
             case 3:
                     return (
                         <Confirm />
-                    )
+                    );
             case 4:
                     return (
                          <Success />
-                    )
+                    );
        }
     }
 }

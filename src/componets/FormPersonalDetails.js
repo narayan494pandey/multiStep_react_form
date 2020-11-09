@@ -3,7 +3,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar  from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-export class FormPersonalDetails extends Component {
+class FormPersonalDetails extends Component {
     continue = e =>{
         e.preventDefault();
         this.props.nextStep();
@@ -48,7 +48,7 @@ export class FormPersonalDetails extends Component {
                     />
                     
                     <RaisedButton 
-                        label="Continue"
+                        label="Back"
                         primary={false}
                         style={styles.button}
                         onClick={this.back}
@@ -64,7 +64,8 @@ export class FormPersonalDetails extends Component {
 }
 const styles = {
     button:{
-        margin:15
+        margin:15,
+        display:'flex'
     }
 }
 export default FormPersonalDetails
